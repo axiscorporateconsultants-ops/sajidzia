@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  /* Exact color palette extracted from the official letterhead */
+  --color-royal-navy: #1e2b58;
+  --color-royal-navy-dark: #141d3d;
+  --color-royal-navy-light: #2a3a70;
+  --color-navy-800: #1e2b58;
+  --color-navy-900: #162550;
+  --color-navy-950: #101938;
+
+  --color-gold-ochre: #c68b2c;
+  --color-gold-ochre-dark: #a8721c;
+  --color-gold-ochre-light: #df9e38;
+  --color-gold-50: #fdf8ee;
+  --color-gold-100: #f8eed6;
+  --color-gold-200: #eed6a5;
+  --color-gold-500: #c68b2c;
+  --color-gold-600: #a8721c;
+
+  --color-icap-green: #006a4e;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #1e293b;
+    background-color: #f8fafc;
+  }
+}
+
+@layer utilities {
+  .h-10 {
+    height: calc(var(--spacing) * 18);
+  }
+}
+
+/* Smooth Tab transitions */
+.tab-content {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
