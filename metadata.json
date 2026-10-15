@@ -1,0 +1,8 @@
+{
+  "name": "Sajid Zia & Co.| Chartered Accountants",
+  "description": "Sajid Zia & Co. is a practicing Chartered Accountancy firm registered with ICAP, providing independent Audit & Assurance, Taxation, Bookkeeping, and SECP Compliance services in Pakistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
